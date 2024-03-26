@@ -13,14 +13,14 @@
     font-weight: bold;
   }
   
-  .SkillListItem > .level {
+  .SkillListItem .level {
     margin-left: 5rem;
     padding: 0.3rem 0.8rem;
-    color: white;
+    color: rgb(17, 16, 16);
     background-color: teal;
     border-radius: 0.8rem;
     font-size: 0.8rem;
     font-weight: normal;
   }
-
+  
   
