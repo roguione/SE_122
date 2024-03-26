@@ -1,6 +1,7 @@
 import "./App.css";
-import SkillList from "./SkillList";
-import NewSkillForm from "./NewSkillForm";
+import "./components/SkillList/SkillList.css";
+import SkillList from "./components/SkillList/SkillList";
+import NewSkillForm from "./components/NewSkillForm/NewSkillForm";
 
 const skills = [
   { name: "HTML", level: 5 },

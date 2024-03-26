@@ -1,5 +1,6 @@
 import React from "react";
-import SkillListItem from "./SkillListItem";
+import SkillListItem from "../SkillListItem/SkillListItem";
+import "./SkillList.css"; 
 
 function SkillList() {
     return (
@@ -10,7 +11,8 @@ function SkillList() {
         <SkillListItem name="Python" level={2} />
       </ul>
     );
-  }
+}
 
 export default SkillList;
+
 
