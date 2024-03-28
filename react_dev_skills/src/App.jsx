@@ -4,21 +4,25 @@ import "./components/SkillList/SkillList.css";
 import SkillList from "./components/SkillList/SkillList";
 import NewSkillForm from "./components/NewSkillForm/NewSkillForm";
 
-const skills = [
-  { name: "HTML", level: 5 },
-  { name: "CSS", level: 3 },
-  { name: "JavaScript", level: 4 },
-  { name: "Python", level: 2 },
-];
-
 function App() {
+  const [skills, setSkills] = useState([
+    { name: "HTML", level: 5 },
+    { name: "CSS", level: 3 },
+    { name: "JavaScript", level: 4 },
+    { name: "Python", level: 2 },
+  ]);
+
+  const addSkill = (newSkill) => {
+    setSkills((prevSkills) => [...prevSkills, newSkill]);
+  };
+
   return (
     <div className="App">
       <h1>React Dev Skills</h1>
       <hr />
-      <SkillList />
+      <SkillList skills={skills} />
       <hr />
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   );
 }
