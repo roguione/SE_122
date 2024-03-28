@@ -22,5 +22,8 @@ app.get('/*', function(req, res) {
     console.log(`Express app running on port ${port}`)
   });
 
+  // Always require and configure near the top 
+  require('dotenv').config();
 
+  require('./config/database');
 
